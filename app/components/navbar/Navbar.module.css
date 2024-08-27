@@ -1,0 +1,17 @@
+.maincontainer{
+    /* background-color: blue; */
+    height: 50px;
+    padding: 0px 20px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}
+.link{
+    margin:  10px;
+}

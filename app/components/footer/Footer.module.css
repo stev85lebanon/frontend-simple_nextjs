@@ -1,0 +1,14 @@
+.container{
+/* border: 1px id red; */
+position: absolute;
+bottom: 20px;
+display: flex;
+justify-content: space-around;
+width: 100%;
+}
+.linksconatiner{
+    
+}
+.image{
+    margin: 0px 10px;
+}
