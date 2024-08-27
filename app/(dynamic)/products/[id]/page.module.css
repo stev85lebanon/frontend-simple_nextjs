@@ -13,3 +13,6 @@
     align-items: center;
     justify-content: center;  
 }
+.title,.description,.price,.category{
+    padding: 10px 25px;
+}

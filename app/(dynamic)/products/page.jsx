@@ -18,7 +18,9 @@ const data=result.products
               // src="/images/icons/facebook.png" 
               width={200} height={200}
               // fill={true} 
-              alt="image"
+              alt="products images"
+              priority
+
               />
             </div>
           <div className={styles.content}>

@@ -1,7 +1,7 @@
 .maincontainer{
     display: grid;
     grid-template-columns: repeat(3,33%);
-    gap: 10px;
+    gap: 15px ;
     margin: 10px;
 
 }
@@ -13,5 +13,12 @@
     align-items: center;
 }
 .linkcard{
-border:1px solid white
+border:1px solid white;
+border-radius: 20px;
+}
+.content{
+    /* border:1px solid red */
+}
+.title,.description{
+padding: 10px;
 }

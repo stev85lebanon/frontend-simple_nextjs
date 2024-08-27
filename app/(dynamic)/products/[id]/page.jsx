@@ -26,7 +26,9 @@ const ProductDetails = async({params}) => {
                     src={img} 
                     width={200} height={200}
                     // fill={true} 
-                    alt="image"
+                    alt="product image"
+                    priority
+
                     />)}
               </div>
             </div>
