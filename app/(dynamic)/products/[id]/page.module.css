@@ -1,0 +1,15 @@
+.image{
+
+}
+.imageContainer{
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    /* border:1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}

@@ -1,10 +1,13 @@
 .container{
-/* border: 1px id red; */
-position: absolute;
-bottom: 20px;
+border: 1px solid red; 
+/* position: absolute; */
+/* bottom: 20px; */
 display: flex;
 justify-content: space-around;
 width: 100%;
+margin: 10px;
+padding: 10px;
+color:gray
 }
 .linksconatiner{
     

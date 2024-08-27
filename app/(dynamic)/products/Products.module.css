@@ -1,0 +1,17 @@
+.maincontainer{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    gap: 10px;
+    margin: 10px;
+
+}
+.imageContainer{
+    /* border:1px solid white; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkcard{
+border:1px solid white
+}
