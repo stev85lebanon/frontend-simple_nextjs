@@ -7,6 +7,9 @@ import Toggle from "../toggle/Toggle";
 const lobst = Lobster({ subsets: ["latin"], weight: ["400"] });
 
 const Navbar = () => {
+    const handleclickbutton = () => {
+        alert("logout")
+    }
     return (
         <div className={styles.maincontainer}>
             <nav className={styles.container}>
@@ -16,7 +19,7 @@ const Navbar = () => {
 
                     {data.map((pro) => <Link className={styles.link} key={pro.id} href={pro.url}>{pro.title}</Link>
                     )}
-                    <Button name="Logout1" />
+                    <Button name="Logout" style={styles.button} />
 
                 </div>
             </nav>

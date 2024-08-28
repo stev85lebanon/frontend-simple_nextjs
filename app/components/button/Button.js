@@ -1,9 +1,13 @@
 "use client"
+import { useContext } from 'react'
 import styles from './Button.module.css'
-const Button = ({ name }) => {
+import { ThemeContext } from '@/app/context/ThemeContext'
+const Button = ({ name, style }) => {
+
+    const { mode } = useContext(ThemeContext)
     return (
         <div >
-            <button className={styles.button} onClick={() => { console.log("logout") }}>{name}</button>
+            <button className={style} style={mode === "dark" ? { color: "white" } : { color: "black", background: "gray" }} onClick={() => { console.log("logout") }}>{name}</button>
         </div>
     )
 }
