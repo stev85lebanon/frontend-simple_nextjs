@@ -1,16 +1,42 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import styles from './Products.module.css'
-const Products = async() => {
-const prod=await fetch("https://dummyjson.com/products")
-const result = await prod.json()
-const data=result.products
+import { useContext, useEffect, useState } from "react"
+import { ThemeContext } from "@/app/context/ThemeContext"
+
+
+// const getData=async()=>{
+//   const res=await fetch("https://dummyjson.com/products")
+// if(!res.ok){
+//   throw new Error("failed to fetch data")
+// }
+// return res.json
+// }
+
+const Products = () => {
+const [datas,setDatas]=useState()
+
+useEffect(()=>{
+fetch("https://dummyjson.com/products")
+.then(res => res.json())
+.then(resul=>setDatas(resul.products));
+},[])
+// const prod=await fetch("https://dummyjson.com/products")
+// const result = await prod.json()
+// const data=result.products
+
+
+
+const {mode}=useContext(ThemeContext)
+
   return (
+
     <div className={styles.maincontainer}>
       
-      {data.map((prod)=>{
+      {datas&&datas.map((prod)=>{
         return (
-          <Link  className={styles.linkcard}  href={`products/${prod.id}`} key={prod.id} >
+          <Link style={mode==="dark" ?{borderColor:"white"}:{borderColor:"black"}}  className={styles.linkcard}  href={`products/${prod.id}`} key={prod.id} >
             <div className={styles.imageContainer}>
               <Image 
               className={styles.image}
