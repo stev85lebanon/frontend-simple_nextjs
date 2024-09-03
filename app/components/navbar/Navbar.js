@@ -22,8 +22,9 @@ const Navbar = () => {
                     <Toggle />
                     {data.map((pro) => <Link className={styles.link} key={pro.id} href={pro.url}>{pro.title}</Link>
                     )}
-                    <Link href={"/login"}><Button name="Login" style={styles.button} handlebutton={handlebuttonlogin} />                    </Link>
-                    <Button name="Sign in" style={styles.button} handlebutton={handlebuttonsignin} />
+                    <Link href={"/login"}><Button name="Login" style={styles.button} handlebutton={handlebuttonlogin} /></Link>
+
+                    <Link href={"/signin"}><Button name="Sign In" style={styles.button} handlebutton={handlebuttonsignin} /></Link>
 
 
                 </div>
